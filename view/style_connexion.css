@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+body{
+    display: flex;
+    background-image: url("color.jpg");
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: -20px 0 50px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 1.5em;
+}
+#connexion_form{
+    position: relative;
+    background: rgb(255,233,240);
+background: linear-gradient(0deg, rgba(255,233,240,1) 18%, rgba(177,190,208,1) 57%);
+    overflow: hidden;
+    min-height: 480px;
+    width: 22em;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px;
+    padding: 3rem;
+}
+#inscription_form{
+    position: relative;
+    background: rgb(255,233,240);
+    background: linear-gradient(0deg, rgba(255,233,240,1) 18%, rgba(177,190,208,1) 57%);
+    overflow: hidden;
+    min-height: 950px;
+    width: 22em;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px;
+    padding: 3rem;
+    height: 20rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+#recherche{
+    position: relative;
+    background-color: #dddddf;
+    overflow: hidden;
+    min-height: 560px;
+    width: 30em;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px;
+    padding: 3rem;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Dancing Script", cursive;
+}
+form input,label, button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
+/* #connexion{
+    padding-top: 6rem;
+} */
+form button{
+    margin-left: 9rem;
+    margin-top: 3rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #dddddf;
+    color: black;
+
+}
+form button:hover{
+    animation: bounce 1s;
+}
+img{
+    width: 13em;
+    padding-right: 1rem;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.custom{
+    position: relative;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+.custom input{
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 1rem;
+}
+.custom .placeholder{
+    position: absolute;
+    left: 57px;
+    top: calc(50% + 7px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease,
+                font-size 0.3s ease,
+                color 0.3s ease;
+    bottom: 2rem;
+}
+.custom input:valid + .placeholder,
+.custom input:focus + .placeholder{
+    top: 10px;
+    font-size: 15px;
+    color: #222;
+
+}
+.inscription{
+    position: relative;
+    bottom: 4rem;
+    text-decoration: none;
+    color: #B6B0DE;
+}
+button p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.genre{
+    display: flex;
+    justify-content: center;
+}
+.ville select{
+    position: relative;
+    top: 1rem;
+    left: 5.3rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.loisir{
+    display: flex;
+    flex-wrap: wrap;
+}
+.connexion_a{
+   position: relative;
+   bottom: 3rem;
+}
+.h1_recherche{
+    margin-top: 5rem;
+    font-family: "Dancing Script", cursive;
+}
+#recherche select{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+.button_recherche{
+    margin-left: 15rem;
+    margin-bottom: 1rem;
+}
+#next_button{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+#previous_button{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
